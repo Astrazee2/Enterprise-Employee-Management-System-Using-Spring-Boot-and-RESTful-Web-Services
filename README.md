@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This project is a **web-based Employee Management System** developed using **Spring Boot**, **Spring Data JPA**, **FreeMarker templates**, and **MySQL**. It is designed to manage organizational data efficiently through a clean interface and a well-structured backend.
 
 The system supports full **CRUD (Create, Read, Update, Delete)** functionality for:
@@ -15,7 +15,7 @@ A clear separation between backend processing and frontend rendering is maintain
 
 ---
 
-## 🏗️ Application Architecture
+##  Application Architecture
 The system follows a **layered architecture** pattern:
 
 ```
@@ -28,9 +28,9 @@ Each layer has a distinct responsibility, ensuring loose coupling and clean code
 
 ---
 
-## 🔧 Core Components
+##  Core Components
 
-### 1️⃣ Controllers
+### 1️ Controllers
 
 #### Web Controller
 - Manages page routing and navigation
@@ -48,7 +48,7 @@ Responsibilities:
 
 ---
 
-### 2️⃣ Service Layer
+### 2️ Service Layer
 Each entity is supported by its own service:
 
 - `EmployeeService`
@@ -64,7 +64,7 @@ Service interfaces (e.g., `IEmployeeService`) are used to promote consistency an
 
 ---
 
-### 3️⃣ Repository Layer
+### 3️ Repository Layer
 Repositories extend `JpaRepository`:
 
 - `EmployeeRepository`
@@ -78,7 +78,7 @@ Responsibilities:
 
 ---
 
-## 🗂️ Data Models & Relationships
+##  Data Models & Relationships
 
 ### Employee
 - Assigned to a single Department
@@ -107,7 +107,7 @@ Relationship:
 
 ---
 
-### 🔗 Relationship Summary
+###  Relationship Summary
 
 | Entity Relationship | Type |
 |--------------------|------|
@@ -119,7 +119,7 @@ All relationships are implemented using **JPA annotations** to ensure data integ
 
 ---
 
-## 🧭 Navigation & Access Control
+##  Navigation & Access Control
 
 ### Dashboard
 - Serves as the main entry point
@@ -142,7 +142,7 @@ When a list page is accessed, a session flag is stored to track valid navigation
 
 ---
 
-### 🔒 CRUD Access Rules
+###  CRUD Access Rules
 To prevent direct URL access to forms:
 - Add, Edit, and View pages are restricted
 - Users must come from a corresponding list page
@@ -161,7 +161,7 @@ Benefits:
 
 ---
 
-## 🎨 Frontend (FreeMarker Templates)
+##  Frontend (FreeMarker Templates)
 
 ### Template Structure
 Each entity includes the following pages:
@@ -178,7 +178,7 @@ Example templates:
 
 ---
 
-### 🎨 CSS Organization
+###  CSS Organization
 The UI styling is modular and reusable:
 
 | CSS File | Purpose |
@@ -197,7 +197,7 @@ This structure ensures visual consistency while keeping styles easy to maintain.
 
 ---
 
-## 🗄️ Database Configuration
+##  Database Configuration
 - Uses **MySQL** as the database
 - Configured via `application.properties`
 - Hibernate manages schema updates automatically
